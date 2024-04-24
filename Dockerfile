@@ -21,4 +21,4 @@ RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
 # Define the default command
-CMD ["/bin/bash"]
+#CMD ["/bin/bash"]
