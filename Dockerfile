@@ -13,7 +13,8 @@ RUN apt-get update && \
     mysql-client \
     vim \
     ftp \
-    curl
+    curl \
+    git
 
 # Clean up the package manager cache to reduce image size
 RUN apt-get clean && \
