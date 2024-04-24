@@ -53,15 +53,3 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-      - name: cosign-installer
-        uses: sigstore/cosign-installer@v3.5.0
-      - name: Write signing key to disk
-        run: echo "$KEY" > cosign.key
-        shell: bash
-        env:
-          KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}
-      - name: Sign the published Docker image
-        env:
-          COSIGN_PASSWORD: ${{ secrets.COSIGN_PASSWORD }}
-        run: cosign sign --key cosign.key ${{ env.REGISTRY }}/${{ github.actor }}/${{
-          env.IMAGE_NAME }}:${{ github.run_id }}
