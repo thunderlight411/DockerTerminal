@@ -1,5 +1,5 @@
-# Use the Azul Zulu OpenJDK 21 image as the base
-FROM azul/zulu-openjdk:21
+# Use the Azul Zulu OpenJDK 22 image as the base
+FROM azul/zulu-openjdk:22
 
 # Update the repository and install required packages
 RUN apt-get update && \
