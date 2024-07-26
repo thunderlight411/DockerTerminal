@@ -1,6 +1,6 @@
 # Docker Image: Ubuntu with OpenJDK 21 and Additional Tools
 
-This Docker image is based on Azul Zulu OpenJDK 21 and includes additional tools installed on top of the base Ubuntu image.
+This Docker image is based on Azul Zulu OpenJDK 22 and includes additional tools installed on top of the base Ubuntu image.
 
 ## Included Tools
 
