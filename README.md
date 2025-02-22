@@ -27,3 +27,5 @@ Once you have the image, you can run a container from it:
 docker run -it thunderlight411/DockerTerminal:main
 ```
 This will start a container based on the Docker image, and you'll have access to the tools and OpenJDK 21 environment included in the image.
+
+[![Docker](https://github.com/thunderlight411/DockerTerminal/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/thunderlight411/DockerTerminal/actions/workflows/docker-publish.yml)
