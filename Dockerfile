@@ -15,7 +15,7 @@ RUN apt-get update && \
     ftp \
     curl \
     git \
-    sshpass
+    sshpass 
 
 # Clean up the package manager cache to reduce image size
 RUN apt-get clean && \
