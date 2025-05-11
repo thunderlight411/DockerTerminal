@@ -14,7 +14,8 @@ RUN apt-get update && \
     vim \
     ftp \
     curl \
-    git
+    git \
+    sshpass
 
 # Clean up the package manager cache to reduce image size
 RUN apt-get clean && \
