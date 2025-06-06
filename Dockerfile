@@ -14,7 +14,16 @@ RUN apt-get update && \
     vim \
     ftp \
     curl \
-    git
+    git \
+    maven \
+    nodejs \
+    npm \
+    python3 \
+    python3-pip \
+    jq \
+    docker.io \
+    zip \
+    tar
 
 # Clean up the package manager cache to reduce image size
 RUN apt-get clean && \
