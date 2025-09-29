@@ -1,5 +1,5 @@
-# Use the Azul Zulu OpenJDK 22 image as the base
-FROM azul/zulu-openjdk:22
+# Use the Azul Zulu OpenJDK 21 image as the base
+FROM azul/zulu-openjdk:21
 
 # Update the repository and install required packages
 RUN apt-get update && \
@@ -15,6 +15,7 @@ RUN apt-get update && \
     ftp \
     curl \
     git \
+
     maven \
     nodejs \
     npm \
@@ -23,6 +24,7 @@ RUN apt-get update && \
     jq \
     zip \
     tar
+    sshpass 
 
 # Clean up the package manager cache to reduce image size
 RUN apt-get clean && \
