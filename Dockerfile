@@ -15,6 +15,15 @@ RUN apt-get update && \
     ftp \
     curl \
     git \
+
+    maven \
+    nodejs \
+    npm \
+    python3 \
+    python3-pip \
+    jq \
+    zip \
+    tar
     sshpass 
 
 # Clean up the package manager cache to reduce image size
@@ -22,4 +31,4 @@ RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
 # Define the default command
-CMD ["/bin/bash"]
+#CMD ["/bin/bash"]
