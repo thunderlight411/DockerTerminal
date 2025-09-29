@@ -21,7 +21,6 @@ This Docker image is based on Azul Zulu OpenJDK 22 and includes additional tools
 - python3
 - python3-pip
 - jq
-- docker.io
 - zip
 - tar
 
