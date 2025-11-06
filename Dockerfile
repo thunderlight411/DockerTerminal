@@ -23,7 +23,7 @@ RUN apt-get update && \
     python3-pip \
     jq \
     zip \
-    tar
+    tar \
     sshpass 
 
 # Clean up the package manager cache to reduce image size
